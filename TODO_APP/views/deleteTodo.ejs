@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+	<body class="delete-page">
+		<div class="table-container">
+			<div class="table-title">Delete Todo</div>
+			<br />
+			<div class="confirm">
+				<p>Are you sure you want to delete the todo?</p>
+				<a href="/confirm-delete/<%= id %>" class="btn yes">Yes</a>
+				<a href="/" class="btn no">No</a>
+			</div>
+		</div>
+	</body>
+</html>

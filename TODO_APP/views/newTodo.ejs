@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs") %>
+<body>
+		<div class="table-container">
+			<div class="table-title">New Todo</div>
+			<div>
+				<a href="/" class="back">Back</a>
+			</div>
+			<br>
+			<form action="/new-todo" method="POST">
+				<div class="new-todo">
+					<div>
+						<label for="title">Title:</label>
+						<input
+							type="text"
+							id="title"
+							name="title"
+							placeholder="Type title here"
+							required />
+					</div>
+					<div>
+						<label for="description">Description:</label>
+						<textarea
+							id="description"
+							name="desc"
+							placeholder="Type description here..."
+							required></textarea>
+					</div>
+					<button type="submit" class="btn">Add Todo</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

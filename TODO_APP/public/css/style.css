@@ -1,0 +1,201 @@
+/* public/css/style.css */
+
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: #f4f6f8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+/* Common Container */
+.table-container {
+	background-color: white;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	max-width: 1000px;
+}
+
+/* Center content only on delete page */
+.delete-page .table-container {
+	text-align: center;
+}
+
+.table-title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2rem;
+	color: #333;
+}
+
+/* Todo Table Styles */
+.todo-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.todo-table th,
+.todo-table td {
+	border: 1px solid #ddd;
+	padding: 12px 15px;
+	text-align: center; /* Keep content in row alignment */
+}
+
+.todo-table th {
+	background-color: #888d92;
+	color: white;
+}
+
+.todo-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.todo-table tr:hover {
+	background-color: #f1f1f1;
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+}
+
+/* Back Button */
+.back {
+	display: inline-block;
+	padding: 8px 16px;
+	background-color: #6c757d;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.back:hover {
+	background-color: #5a6268;
+}
+
+/* Delete button inside table */
+.delete {
+	background-color: rgb(227, 66, 66);
+}
+
+.delete:hover {
+	background-color: rgb(130, 4, 4);
+}
+
+/* Confirmation page buttons */
+.btn.yes {
+	background-color: rgb(227, 66, 66);
+}
+
+.btn.yes:hover {
+	background-color: rgb(130, 4, 4);
+}
+
+.btn.no {
+	background-color: #6c757d;
+}
+
+.btn.no:hover {
+	background-color: #5a6268;
+}
+
+/* Confirmation Text */
+.confirm p {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+/* Actions Container */
+.actions {
+	display: flex;
+}
+
+/* Update Todo Form */
+.update-todo {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.update-todo label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #333;
+}
+
+.update-todo input,
+.update-todo textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.update-todo textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
+.update-todo button {
+	align-self: flex-start;
+}
+
+/* Add Todo Form */
+.new-todo {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.new-todo label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #333;
+}
+
+.new-todo input,
+.new-todo textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.new-todo textarea {
+	min-height: 100px;
+	resize: vertical;
+}
+
+.new-todo button {
+	align-self: flex-start;
+}
