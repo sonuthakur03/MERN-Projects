@@ -62,7 +62,7 @@ A full-stack web application built using the MERN stack (MongoDB, Express.js, Re
 ## Folder Structure
 
 ```
-/client   # React frontend
+/client   # React frontend .
 /server   # Express backend
 ```
 
